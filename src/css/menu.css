@@ -1,0 +1,18 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    font-size : 3em;
+    height: 68px;
+    color: #FF6060;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    list-style: none;
+    font-size: 20px;
+}
+
+.logokasa{
+    Height : 60%;
+}
