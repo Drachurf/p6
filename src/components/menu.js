@@ -5,10 +5,10 @@ export default function Menu(){
     return (
         <div className="menu">
             <div className='titre'>K<img className='logokasa' src={imgKasa} alt="Logo kasa" />sa</div>
-            <ul>
-                <li><NavLink to="/">Acceuil</NavLink></li>
-                <li><NavLink to="/apropos">A propos</NavLink></li>
-            </ul>
+            <div className='nav'>
+                <p><NavLink to="/" className={({isActive}) =>(isActive ? "activeLink" : undefined )}>Acceuil</NavLink></p>
+                <p><NavLink to="/apropos" className={({isActive}) =>(isActive ? "activeLink" : undefined )}>A Propos</NavLink></p>
+            </div>
         </div>
     )
 }
