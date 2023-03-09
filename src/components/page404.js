@@ -1,7 +1,11 @@
+import {NavLink} from 'react-router-dom';
+
 function Page404(){
     return(
-        <div>
-            <h1>Page 404</h1>
+        <div className='page404'>
+            <div className="erreur">404</div>
+            <p className='oups'>Oups! La page que vous demandez n'existe pas.</p>
+            <p><NavLink to="/" className="retour">Retorner à la page d'accueil</NavLink></p>
         </div>
     )
 }

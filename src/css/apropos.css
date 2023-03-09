@@ -1,7 +1,13 @@
-
+.apropos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .paraporpos{
     background: #F7F7F7;
     margin-bottom: 2%;
+    width: 80%;
+    display: flex;
 }
 p{
     border-radius: 5px;
@@ -16,5 +22,4 @@ summary{
     color: white;
     padding: 1%;
     border-radius: 5px;
-   
 }

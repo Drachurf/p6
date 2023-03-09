@@ -3,3 +3,8 @@
 @import "./menu.css";
 @import "./apropos.css";
 @import "./footer.css";
+@import "./404.css";
+
+html{
+    font-family: "Shantell+Sans", sans-serif;
+}
