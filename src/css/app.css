@@ -4,6 +4,7 @@
 @import "./apropos.css";
 @import "./footer.css";
 @import "./404.css";
+@import "./fiche.css";
 
 html{
     font-family: "Shantell+Sans", sans-serif;

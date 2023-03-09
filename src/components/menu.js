@@ -3,12 +3,13 @@ import imgKasa from '../../src/images/Vector.png';
 
 export default function Menu(){
     return (
-        <div className="menu">
+        <nav className="menu">
             <div className='titre'>K<img className='logokasa' src={imgKasa} alt="Logo kasa" />sa</div>
-            <div className='nav'>
-                <p><NavLink to="/" className={({isActive}) =>(isActive ? "activeLink" : undefined )}>Accueil</NavLink></p>
-                <p><NavLink to="/apropos" className={({isActive}) =>(isActive ? "activeLink" : undefined )}>A Propos</NavLink></p>
-            </div>
-        </div>
+            <ul className='nav'>
+                <li><NavLink to="/" className={({isActive}) =>(isActive ? "activeLink" : undefined )}>Accueil</NavLink></li>
+                <li><NavLink to="/apropos" className={({isActive}) =>(isActive ? "activeLink" : undefined )}>A Propos</NavLink></li>
+                </ul>
+
+        </nav>
     )
 }

@@ -3,7 +3,7 @@ import imgBack from "../../src/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg";
 export default function Apropos() {
   return (
     <div className="apropos">
-      <img className="imgHome" src={imgBack} alt="Montagne" />
+      <img className="home" src={imgBack} alt="Montagne" />
       <details className="paraporpos">
         <summary>Fiabilité</summary>
         <p>

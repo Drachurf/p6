@@ -1,10 +1,15 @@
 import {Routes, Route} from 'react-router-dom';
-import Home from '../src/pages/home.js';
-import Apropos from '../src/components/Apropos.js';
-import Menu from '../src/components/menu.js';
-import Page404 from '../src/components/page404.js';
+
 import Footer from '../src/components/footer.js';
+import Menu from '../src/components/menu.js';
+
+import Page404 from '../src/pages/page404.js';
+import Home from '../src/pages/home.js';
+import Apropos from '../src/pages/Apropos.js';
+import Fiche from '../src/pages/Fiche.js';
 import '../src/css/app.css';
+
+
 function App() {
   return (
   <>
@@ -12,6 +17,7 @@ function App() {
   <Routes >
   <Route path="/" element={<Home /> } />
   <Route path="/apropos" element={<Apropos /> } />
+  <Route path="/fiche" element={<Fiche /> } />
   <Route path="/*" element={<Page404 /> } />
   </Routes>
   <Footer />
