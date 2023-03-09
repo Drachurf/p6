@@ -7,9 +7,10 @@ font-size: 'Shantell+Sans';
     display: flex;
     width: 100%;
     height: 220px;
+    object-fit: cover;
     background-size: 100% 381px;
     border-radius: 25px;
-    background-image: url(/src/images/IMG.jpg) linear-gradient(black, black),;
+    background-image: url(/src/images/IMG.jpg);
     align-items: center;
     justify-content: center;
 }

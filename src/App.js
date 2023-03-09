@@ -9,6 +9,13 @@ import Apropos from '../src/pages/Apropos.js';
 import Fiche from '../src/pages/Fiche.js';
 import '../src/css/app.css';
 
+fetch('logement.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+
+
 
 function App() {
   return (

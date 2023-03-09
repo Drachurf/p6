@@ -22,4 +22,20 @@ summary{
     color: white;
     padding: 1%;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
 }
+
+details>summary {
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none
+  }
+  summary::after {
+    content: '>';
+  }
+  details[open] summary:after {
+    content: ">";
+    transform: rotate(90deg)
+  }
