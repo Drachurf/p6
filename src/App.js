@@ -1,5 +1,6 @@
 import {Routes, Route} from 'react-router-dom';
 
+
 import Footer from '../src/components/footer.js';
 import Menu from '../src/components/menu.js';
 
@@ -9,15 +10,10 @@ import Apropos from '../src/pages/Apropos.js';
 import Fiche from '../src/pages/Fiche.js';
 import '../src/css/app.css';
 
-fetch('logement.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-  })
-
 
 
 function App() {
+
   return (
   <>
   <Menu />

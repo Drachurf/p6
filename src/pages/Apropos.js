@@ -1,17 +1,17 @@
 import imgBack from "../../src/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg";
 
-export default function Apropos() {
+function Apropos() {
   return (
     <div className="apropos">
       <img className="home" src={imgBack} alt="Montagne" />
-      <details className="paraporpos">
-        <summary>Fiabilité</summary>
-        <p>
-          Les annonces postées sur Kasa garantissent une fiabilité totale. Les
-          photos sont conformes aux logements, et toutes les informations sont
-          régulièrement vérifiées par nos équipes.
-        </p>
-      </details>
+  <details className="paraporpos">
+      <summary>Fiabilité</summary>
+      <p>
+        Les annonces postées sur Kasa garantissent une fiabilité totale. Les
+        photos sont conformes aux logements, et toutes les informations sont
+        régulièrement vérifiées par nos équipes.
+      </p>
+  </details>
       <details className="paraporpos">
         <summary>Respect</summary>
         <p>
@@ -42,3 +42,4 @@ export default function Apropos() {
     </div>
   );
 }
+export default Apropos

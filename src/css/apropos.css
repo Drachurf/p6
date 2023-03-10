@@ -8,6 +8,20 @@
     margin-bottom: 2%;
     width: 80%;
     display: flex;
+    flex-direction: column;
+}
+.upanddown{
+  width: 16px;
+  height: 10px;
+}
+button{
+  background-color: #FF6060;
+  border: none;
+}
+h3{
+  margin: 0;
+  font-weight: 500;
+  font-size: 17px;
 }
 p{
     border-radius: 5px;
@@ -16,7 +30,7 @@ p{
     margin: 1%;
     margin-bottom: 2%;
 }
-summary{
+summary, .btnapropos{
     font-weight: 500;
     background-color: #FF6060;
     color: white;
@@ -24,6 +38,7 @@ summary{
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    border : none;
 }
 
 details>summary {

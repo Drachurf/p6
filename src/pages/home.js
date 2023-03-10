@@ -1,3 +1,13 @@
+fetch('logement.json')
+  .then(response => response.json())
+  .then(data => {
+    // Accéder aux ids des annonces
+    const ids = data.map(logement => logement.id);
+    console.log(ids);
+  })
+  .catch(error => console.error(error));
+
+
 
 export default function Home(){
     return (
@@ -16,10 +26,7 @@ export default function Home(){
 
 /* function genererAnnonces(annonces) {  
         
-        const conteneur = document.querySelector('.conteneur')
-        console.log(conteneur);
-
-        const sectionAnnonces = document.querySelector(".conteneur");
+        const sectionAnnonces = <div></div>
         sectionAnnonces.innerHTML = ""
             for (let i = 0; i < annonces.length; i++) {
           const annonce = annonces[i];
