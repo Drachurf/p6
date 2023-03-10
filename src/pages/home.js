@@ -1,26 +1,34 @@
-fetch('logement.json')
-  .then(response => response.json())
-  .then(data => {
-    // Accéder aux ids des annonces
-    const title = data.map(logement => logement.title);
-    console.log(title);
-
-    const ids = data.map(logement => logement.id);
-    console.log(ids);
-
-  })
-  .catch(error => console.error(error));
+import { pictures, title } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Home(){
-    return (
+  const [pictures, setPictures] = useState([]);
+  const [title, setTitle] = useState([]);
+
+  useEffect(() => {
+    fetch('logement.json')
+    .then(response => response.json())
+    .then(data => {
+      const picturesArray = data.map(logement => logement.pictures[0]);
+      setPictures(picturesArray);
+
+      const titleArray = data.map(logement => logement.title);
+      setTitle(titleArray);
+    })
+    .catch(error => console.error(error));
+}, []);
+
+
+  return (
         <section>
         <div className="home">
             <h1>Chez vous, partout et ailleurs</h1>
         </div>
-        <div className='box'>
+          <div className='box'>
             <div className='conteneur'>
-                    <h5>titre de la location</h5>
-            </div>
+            <img className='imghome' src="{pictures}" alt={title}/>
+            <h5>{title}</h5>
+        </div>
         </div>
         </section>
     )  
