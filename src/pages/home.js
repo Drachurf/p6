@@ -2,14 +2,16 @@ fetch('logement.json')
   .then(response => response.json())
   .then(data => {
     // Accéder aux ids des annonces
+    const title = data.map(logement => logement.title);
+    console.log(title);
+
     const ids = data.map(logement => logement.id);
     console.log(ids);
+
   })
   .catch(error => console.error(error));
 
-
-
-export default function Home(){
+function Home(){
     return (
         <section>
         <div className="home">
@@ -23,7 +25,7 @@ export default function Home(){
         </section>
     )  
 }
-
+export default Home
 /* function genererAnnonces(annonces) {  
         
         const sectionAnnonces = <div></div>
