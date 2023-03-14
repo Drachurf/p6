@@ -41,7 +41,7 @@
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-5.jpg",
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-6.jpg"
 			],
-			"description": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes Ã  pied du Canl Saint Martin, vous serez proche des transports, mais Ã©galement de nombreux commerces. L'appartement est tout Ã©quipÃ©, et possÃ¨de Ã©galement un parking pour ceux qui souhaitent se dÃ©placer en voiture.",
+			"description": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes Ã  pied du Canl Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
 			"host": {
 				"name": "Della Case",
 				"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
@@ -51,14 +51,14 @@
 			"equipments": [
 				"Parking",
 				"SÃ¨che Cheveux",
-				"Machine Ã  laver",
+				"Machine à laver",
 				"Wi-fi",
-				"Cuisine Ã©quipÃ©e",
-				"TÃ©lÃ©vision"
+				"Cuisine équipée",
+				"Télévision"
 			],
 			"tags": [
 				"Canal Saint Martin",
-				"RÃ©publique",
+				"République",
 				"Appartement"
 			]
 		},
@@ -72,7 +72,7 @@
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-3.jpg",
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-4.jpg"
 			],
-			"description": "Ã€ seulement deux pas des Buttes Chaumont, venez dÃ©couvrir Paris dans ce studio tout Ã©quipÃ©. EntiÃ¨rement Ã©quipÃ© pour votre confort et Ã©lÃ©gamment dÃ©corÃ©, il vous permettra de vivre comme un Parisien le temps de votre sÃ©jour.",
+			"description": "A seulement deux pas des Buttes Chaumont, venez découvrir Paris dans ce studio tout équipé. Entièrement équipé pour votre confort et élégamment décoré, il vous permettra de vivre comme un Parisien le temps de votre séjour.",
 			"host": {
 				"name": "Franck Maher",
 				"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-2.jpg"
@@ -81,19 +81,19 @@
 			"location": "Ile de France - Paris 20e",
 			"equipments": [
 				"Wi-fi",
-				"Cuisine Ã©quipÃ©e",
-				"TÃ©lÃ©vision",
-				"SÃ¨che Cheveux"
+				"Cuisine équipée",
+				"Télévision",
+				"Sèche Cheveux"
 			],
 			"tags": [
 				"Buttes Chaumont",
-				"LaumiÃ¨re",
+				"Laumière",
 				"Studio"
 			]
 		},
 		{
 			"id": "7af00cd6",
-			"title": "Nid douillet au coeur du 11Ã¨me",
+			"title": "Nid douillet au coeur du 11ème",
 			"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
 			"pictures": [
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
@@ -101,7 +101,7 @@
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-3.jpg",
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-4.jpg"
 			],
-			"description": "Venez dÃ©couvrir Paris en sÃ©journant dans ce nid douillet au coeur du 11Ã¨me. La vue sur le parc rÃ©sidentiel saura vous reposer de vos longues journÃ©es de tourisme dans la capitale franÃ§aise. Et pour les plus fÃªtards d'entre vous, la rue Jean Pierre Timbaud vous permettra de dÃ©couvrir la night-life parisienne Ã  seulement 5 minutes de l'appartement.",
+			"description": "Venez découvrir Paris en sÃ©journant dans ce nid douillet au coeur du 11ème. La vue sur le parc résidentiel saura vous reposer de vos longues journées de tourisme dans la capitale française. Et pour les plus fétards d'entre vous, la rue Jean Pierre Timbaud vous permettra de dÃ©couvrir la night-life parisienne Ã  seulement 5 minutes de l'appartement.",
 			"host": {
 				"name": "Della Case",
 				"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
@@ -183,7 +183,7 @@
 		},
 		{
 			"id": "b4c67936",
-			"title": "Cheap - Studio 18Ã¨me",
+			"title": "Cheap - Studio 18ème",
 			"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-1.jpg",
 			"pictures": [
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-1.jpg",
@@ -340,7 +340,7 @@
 		},
 		{
 			"id": "5323c29b",
-			"title": "Studio fonctionnel RÃ©publique",
+			"title": "Studio fonctionnel République",
 			"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-11-3.jpg",
 			"pictures": [
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-11-3.jpg",
@@ -373,7 +373,7 @@
 		},
 		{
 			"id": "af6d2d48",
-			"title": "Bungalow dans la forÃªt",
+			"title": "Bungalow dans la forêt",
 			"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-12-1.jpg",
 			"pictures": [
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-12-1.jpg",
@@ -438,7 +438,7 @@
 		},
 		{
 			"id": "ba55a0cc",
-			"title": "Maison T5 - Le VÃ©sinet",
+			"title": "Maison T5 - Le Vésinet",
 			"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-14-1.jpg",
 			"pictures": [
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-14-1.jpg",
@@ -474,7 +474,7 @@
 		},
 		{
 			"id": "1e181317",
-			"title": "Loft de Luxe Ã  la DÃ©fense",
+			"title": "Loft de Luxe à la Défense",
 			"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-1.jpg",
 			"pictures": [
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-1.jpg",
@@ -483,7 +483,7 @@
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-4.jpg",
 				"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-5.jpg"
 			],
-			"description": "Si vous Ãªtes Ã  la recherche de l'endroit idÃ©al pour poser vos valises entre deux rdvs d'affaire, ne cherchez plus. Notre loft est l'endroit idÃ©al. En plein coeur de la DÃ©fense, il dispose Ã©galement de tous les Ã©quipements pour que vous soyez comme chez vous.",
+			"description": "Si vous êtes Ã  la recherche de l'endroit idÃ©al pour poser vos valises entre deux rdvs d'affaire, ne cherchez plus. Notre loft est l'endroit idÃ©al. En plein coeur de la DÃ©fense, il dispose Ã©galement de tous les Ã©quipements pour que vous soyez comme chez vous.",
 			"host": {
 				"name": "Julie Donatella",
 				"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-10.jpg"

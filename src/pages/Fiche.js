@@ -1,5 +1,3 @@
-
-
 function Fiche(){
     return(
         <div className='fiche'>

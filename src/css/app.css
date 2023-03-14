@@ -5,6 +5,7 @@
 @import "./footer.css";
 @import "./404.css";
 @import "./fiche.css";
+@import "./card.css";
 
 html{
     font-family: "Shantell+Sans", sans-serif;
