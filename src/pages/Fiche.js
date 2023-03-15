@@ -1,7 +1,10 @@
-function Fiche(){
+
+
+function Fiche({ id, title, img }) {
     return(
-        <div className='fiche'>
-            <p>créer fiche</p>
+        <div>
+            <h1>efzejfhzefiozehfoezhfozeh ezf zeofhz eofhze</h1>
+            <img className="zoro" src={img} alt={title} />
         </div>
     )
 }
