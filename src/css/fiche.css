@@ -1,0 +1,60 @@
+.carrousel {
+  height: 415px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 25px;
+  margin-bottom: 1%;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+  margin: 0px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6060;
+  text-align: left;
+}
+.profil {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+.description {
+  display: flex;
+  gap: 10%;
+}
+.boxhote > p,
+.hote > p {
+  color: #ff6060;
+}
+.tags {
+  background-color: #ff6060;
+  color: white;
+  border-radius: 25px;
+  height: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.hote {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2%;
+}
+.boxnote{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titre{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    color: #ff6060;
+}
