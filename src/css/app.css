@@ -6,7 +6,7 @@
 @import "./404.css";
 @import "./fiche.css";
 @import "./card.css";
-
+@import "./banner.css";
 html{
     font-family: "Shantell+Sans", sans-serif;
 }

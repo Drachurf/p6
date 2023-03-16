@@ -2,28 +2,19 @@
 header{
 font-size: 'Shantell+Sans';
 }
-.imageacceuil{
-    margin: 3% 0%;
-    width: 100%;
-    height: 220px;
-    border-radius: 25px;
-    background-color: #000000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/src/images/IMG.jpg);
-    background-position: center;
-    background-size: cover;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    object-fit: cover;
-}
 h1{
     font-size: 48px;
+    display: flex;
+    position: relative;
+    top: -200px;
+    justify-content: center;
+    color: white;
 }
 .box{
-    padding: 5% 0px;
+    padding: 5% 0;
     gap: 40px ; 
     margin-bottom: 2%;
+    margin-top: -12%;
     background: #F6F6F6;
     border-radius: 25px;
     display: flex;
