@@ -18,11 +18,9 @@ function Home() {
       })
       .catch((error) => console.error(error));
   }, []);
-
   return (
     <>
-    <Banner texte={titre} img={imgFront} />
-
+    <Banner  texte={titre} img={imgFront} />
       <section>
         <div className="box">
           {loading && <p>Chargement en cours ...</p>}

@@ -1,7 +1,8 @@
-.imagebanner{
-    margin:3% 0%;
-    width: 100%;
-    height: 220px;
-    border-radius: 25px;
-    object-fit: cover;
+.imagebanner {
+  filter: brightness(80%);
+  margin: 3% 0%;
+  width: 100%;
+  height: 220px;
+  border-radius: 25px;
+  object-fit: cover;
 }

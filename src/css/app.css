@@ -7,6 +7,8 @@
 @import "./fiche.css";
 @import "./card.css";
 @import "./banner.css";
+@import "./collapse.css";
+@import "./slideshow.css";
 html{
     font-family: "Shantell+Sans", sans-serif;
 }

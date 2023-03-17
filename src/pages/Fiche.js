@@ -1,9 +1,10 @@
+import Collapse from "../components/collapse";
+import React from "react";
+import { SliderData } from "../../src/components/sliderData.js";
+import SlideShow from "../../src/components/slideshow";
+
 const imge =
-  "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg";
-const imge2 =
-  "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg";
-const imge3 =
-  "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg";
+  ["https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"]
 
 /*useEffect(() => {
     fetch("logement.json")
@@ -19,14 +20,8 @@ const imge3 =
 function Fiche(annonce) {
   return (
     <>
-      <div>
-        <img className="carrousel" src={imge2 && imge3} alt="cest beau" />
-      </div>
 
-
-
-
-      
+<SlideShow slides={SliderData} />
       <div className="titre">
         <div>
           <h2>Cozy loft on the Canal Saint-Martin{}</h2>
@@ -42,14 +37,8 @@ function Fiche(annonce) {
         <p>S T A R S{}</p>
       </div>
       <div className="description">
-        <details className="paraporpos">
-          <summary>Description</summary>
-          <p>{}</p>
-        </details>
-        <details className="paraporpos">
-          <summary>Equipements</summary>
-          <ul>{}</ul>
-        </details>
+      <Collapse titrepara={""} para={""} />
+      <Collapse titrepara={""} para={""} />
       </div>
     </>
   );

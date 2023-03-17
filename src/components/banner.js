@@ -1,5 +1,5 @@
 function Banner({ img, texte = false }) {
-  return (
+    return (
     <>
       <img
         className="imagebanner" src={img} alt="payage de présentation"/>

@@ -1,0 +1,47 @@
+details > p {
+  border-radius: 5px;
+  font-weight: 500;
+  color: #ff6060;
+  margin: 1%;
+  margin-bottom: 2%;
+}
+summary,
+.btnapropos {
+  font-weight: 500;
+  background-color: #ff6060;
+  color: white;
+  padding: 0px 3%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  height: 40px;
+  align-items: center;
+}
+details > summary {
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::after {
+  content: ">";
+}
+details[open] > summary:after {
+  content: ">";
+  transform: rotate(90deg);
+}
+details[open].parapropos {
+  background: #f7f7f7;
+  border-radius: 10px;
+}
+.parapropos {
+  margin-bottom: 2%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.upanddown {
+  width: 16px;
+  height: 10px;
+}

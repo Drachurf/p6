@@ -1,0 +1,22 @@
+.imageslider {
+  width: 1000px;
+  height: 500px;
+  border-radius: 10px;
+}
+button {
+  background-color: transparent;
+  position: absolute;
+  top: 38%;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+}
+
+.left {
+  left: 60px;
+}
+.right {
+  right: 60px;
+}
