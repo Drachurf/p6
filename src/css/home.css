@@ -6,7 +6,7 @@ h1{
     font-size: 48px;
     display: flex;
     position: relative;
-    top: -200px;
+    top: -175px;
     justify-content: center;
     color: white;
 }
@@ -14,7 +14,6 @@ h1{
     padding: 5% 0;
     gap: 40px ; 
     margin-bottom: 2%;
-    margin-top: -12%;
     background: #F6F6F6;
     border-radius: 25px;
     display: flex;

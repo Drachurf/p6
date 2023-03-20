@@ -21,7 +21,7 @@ const para3 = [
 function Apropos() {
   return (
     <>
-      <Banner img={imgBack} alt="paysage de montagne" />
+      <Banner img={imgBack} alt="Paysage de montagne" />
       <div className="apropos">
         <Collapse titre={titrepara0} para={para0} />
         <Collapse titre={titrepara1} para={para1} />

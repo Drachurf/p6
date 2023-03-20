@@ -1,46 +1,38 @@
 import Collapse from "../components/collapse";
-import React from "react";
 import { SliderData } from "../../src/components/sliderData.js";
 import SlideShow from "../../src/components/slideshow";
+import { useParams } from "react-router-dom";
+import annonceJson from "../../src/module/logement.json";
 
-const imge =
-  ["https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"]
+function Fiche() {
+  const {id} = useParams();
+  const element = annonceJson.find((item) => item.id === id);
 
-/*useEffect(() => {
-    fetch("logement.json")
-      .then((response) => response.json())
-      .then((data) => { 
-        const annonce = data.filter(annonce => annonce.id === id); // ID provient de l'url
-        setLoading(false);
-        setAnnonce(annonce);
-      })
-      .catch((error) => console.error(error));
-  }, []);*/
+  // Utiliser ficheData pour afficher les données associées à l'ID
 
-function Fiche(annonce) {
   return (
     <>
-
-<SlideShow slides={SliderData} />
-      <div className="titre">
-        <div>
-          <h2>Cozy loft on the Canal Saint-Martin{}</h2>
-          <h3>Paris - Ile de France{}</h3>
-        </div>
-        <div className="hote">
-          <p>Nom Prénom{}</p>
-          <img className="profil" src={imge} alt="c'est beau{}" />
-        </div>
+    <SlideShow slides={SliderData} />
+    <div className="titre">
+      <div>
+        <h2>{element.title}</h2>
+        <h3>{element.location}</h3>
       </div>
-      <div className="boxnote">
-        <div className="tags">TAGS{}</div>
-        <p>S T A R S{}</p>
+      <div className="hote">
+        <p>{element.host.name}</p>
+        <img className="profil" src={element.host.picture} alt={element.host.name}/>
       </div>
-      <div className="description">
-      <Collapse titrepara={""} para={""} />
-      <Collapse titrepara={""} para={""} />
-      </div>
+    </div>
+    <div className="boxnote">
+      <div className="tags">{element.tags} PAS BON !!!!!!!!!!! </div> 
+      <p>{element.rating} PAS BON !!!!!!!!!!!!!</p>
+    </div>
+    <div className="description">
+      <Collapse titre="Description" para={element.description} />
+      <Collapse titre="Equipements" para={<ul><li>{element.equipments}</li> PAS BON !!!!!!!!!!!! </ul>} />
+    </div>
     </>
   );
 }
+
 export default Fiche;
