@@ -30,16 +30,21 @@ h3 {
 .hote > p {
   color: #ff6060;
 }
-.tags {
+.tags{
+  display: flex;
+  gap : 10%;
+  width: 10%;
+}
+.tag {
   background-color: #ff6060;
   color: white;
-  border-radius: 25px;
+  border-radius: 10px;
   height: 25px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  padding: 1% 15%;
 }
 .hote {
   display: flex;

@@ -1,8 +1,11 @@
+import vector from '../../src/images/Vector-3.png'
+
+
 function Collapse(collapse){
     return(
         <details className="parapropos">
-        <summary>{collapse.titre}</summary>
-        <p>{collapse.para}</p>
+        <summary><div>{collapse.titre}</div> <img src={vector} alt="cliquer pour afficher le texte"/> </summary>
+        <div className="paragraphe">{collapse.para}</div>
       </details>
     )
 }

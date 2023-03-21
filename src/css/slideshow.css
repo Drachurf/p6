@@ -6,7 +6,7 @@
 button {
   background-color: transparent;
   position: absolute;
-  top: 40%;
+  top: 38%;
   font-size: 3rem;
   color: white;
   cursor: pointer;
@@ -19,4 +19,12 @@ button {
 }
 .right {
   right: 60px;
+}
+.compteur{
+  display: flex;
+  position: relative;
+  top: 22em;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
 }
