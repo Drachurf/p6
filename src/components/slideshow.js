@@ -18,29 +18,31 @@ const SlideShow = ({ slides }) => {
   }
   return (
     <section>
-      {length > 1 && (
-        <>
-          <button className="left" onClick={handlePreviousSlide}>
-            <img src={previous} alt="précédent"/>
-          </button>
-          <button className="right" onClick={handleNextSlide}>
+  {length > 1 && (
+    <>
+      <div className="button-container">
+        <button className="left" onClick={handlePreviousSlide}>
+          <img src={previous} alt="précédent"/>
+        </button>
+        <button className="right" onClick={handleNextSlide}>
           <img src={next} alt="suivant"/>
-          </button>
-          <div className="compteur">
-            {current + 1}/{length}
-          </div>
-        </>
-      )}
-      {slides.map((slide, index) => {
-        return (
-          <div key={index}>
-            {index === current && (
-              <img src={slide} alt="travel" className="carrousel" />
-            )}
-          </div>
-        );
-      })}
-    </section>
+        </button>
+      </div>
+      <div className="compteur">
+        {current + 1}/{length}
+      </div>
+    </>
+  )}
+  {slides.map((slide, index) => {
+    return (
+      <div key={index} className="image-container">
+        {index === current && (
+          <img src={slide} alt="travel" className="carrousel" />
+        )}
+      </div>
+    );
+  })}
+</section>
   );
 };
 export default SlideShow;

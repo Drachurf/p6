@@ -1,18 +1,24 @@
-footer{
-    padding: 2% 0px;
-   background: black;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+footer {
+  padding: 2% 0px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.titrefoot{
+.titrefoot {
+  color: white;
+  font-size: 40px;
+}
+.logoFkasa {
+  width: 20px;
+}
+footer p {
+  color: white;
+  font-size: 24px;
+}
+@media screen and (max-width: 767px) {
+  footer p {
     color: white;
-    font-size: 40px;
-}
-.logoFkasa{
-    width: 20px;
-}
-footer p{
-    color: white;
-    font-size: 24px;
+    font-size: 17px;
+  }
 }

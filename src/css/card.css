@@ -1,5 +1,5 @@
 .conteneur{
-    Width:30%;
+    Width:29%;
     Height:340px;
     display: flex;
     flex-direction: column;
@@ -9,4 +9,20 @@ h5{
     width: 65%;
     text-shadow: 1px 1px black;
     font-size: large;
+}
+
+@media screen and (max-width: 992px){
+    .conteneur{
+    height: 270px;
+    }
+
+}
+@media screen and (max-width: 767px){
+    .conteneur{
+       width: 95%;
+    }
+    h5{
+        width: 65%;
+        text-shadow: 1px 1px black;
+    }
 }

@@ -2,14 +2,6 @@
 header{
 font-size: 'Shantell+Sans';
 }
-h1{
-    font-size: 48px;
-    display: flex;
-    position: relative;
-    top: -175px;
-    justify-content: center;
-    color: white;
-}
 .box{
     padding: 5% 0;
     gap: 40px ; 
@@ -19,4 +11,10 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+@media screen and (max-width: 767px) {
+    .box{
+        margin-top: -50px;
+        gap : 20px ;
+    }
 }

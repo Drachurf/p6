@@ -25,3 +25,13 @@ li{
 .activeLink{
     text-decoration: underline;
 }
+@media screen and (max-width: 992px){
+    .nav{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 767px){
+    .nav{
+        width: 50%;
+    }
+}

@@ -8,8 +8,15 @@
     font-size: 288px;
 }
 .oups{
+    color: #FF6060;
 font-size :36px;
 }
 .retour{
 color:#FF6060
+}
+@media screen and (max-width: 767px) {
+    .erreur{
+        margin-top: 50px;
+        font-size: 98px;
+    }
 }

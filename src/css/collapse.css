@@ -33,15 +33,15 @@ details[open].parapropos {
   border-radius: 10px;
 }
 .parapropos {
-  margin-bottom: 2%;
+  margin: 1%;
   width: 80%;
-  display: flex;
-  flex-direction: column;
-}
-.upanddown {
-  width: 16px;
-  height: 10px;
 }
 ul{
-  margin-left: -5%
+  margin-left: -10%
+}
+@media screen and (max-width: 767px){
+  .parapropos {
+    width: 100%;
+    margin-bottom: 4%;
+  }
 }
