@@ -45,4 +45,7 @@ height : 30px;
   .carrousel{
     height: 255px;
   }
+  .compteur{
+    display: none;
+  }
 }
