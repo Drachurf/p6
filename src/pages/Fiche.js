@@ -1,26 +1,28 @@
 import Collapse from "../components/collapse";
 import SlideShow from "../../src/components/slideshow";
 import { useParams } from "react-router-dom";
-import annonceJson from "../../src/module/logement.json";
+import logement from "../../src/json/logement.json";
+import Rating from "../components/rating";
 
 function Fiche() {
+
+  //hook pour récupérer l'id du logement
   const { id } = useParams();
-  const element = annonceJson.find((item) => item.id === id);
-  // Utiliser element pour afficher les données associées à l'ID
+  // Utiliser element pour afficher les données associées à l'id
+  const element = logement.find((item) => item.id === id);
   const images = element.pictures.map((picture) => picture);
   return (
     <>
+    {/* insertion des composants nécessaires et récupération des éléments (element) */}
       <SlideShow slides={images} />
-
       <div className="information">
         <div>
           <h2>{element.title}</h2>
           <h3>{element.location}</h3>
           <div className="tags">
-            {element.tags.map((tag, index) => (
-              <div className="tag" key={index}>
-                {tag}
-              </div>
+            {/* création du tableu tag pour récupérer les différents tag, avec une clef unique tag*/}
+            {element.tags.map((tag) => (
+              <div className="tag" key={tag}>{tag}</div>
             ))}
           </div>
         </div>
@@ -34,22 +36,15 @@ function Fiche() {
             />
           </div>
           <div>
-            <div>{element.rating} Etoiles</div>
+            <div><Rating hostRate={element.rating}/> </div>
           </div>
         </div>
       </div>
       <div className="description">
         <Collapse titre="Description" para={element.description} />
-        <Collapse
-          titre="Equipements"
-          para={
-            <ul>
-              {element.equipments.map((equipment) => (
-                <li key={equipment}>{equipment}</li>
-              ))}
-            </ul>
-          }
-        />
+        {/* Création d'un table pour récupérer la liste des équipements*/}
+        <Collapse titre="Equipements" para={<ul>{element.equipments.map((equipment) => (
+            <li key={equipment}>{equipment}</li>))}</ul>}/>
       </div>
     </>
   );

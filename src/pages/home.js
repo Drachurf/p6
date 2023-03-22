@@ -2,36 +2,33 @@ import React, { useState, useEffect } from "react";
 import Card from "../../src/components/card.js";
 import Banner from "../../src/components/banner.js";
 import imgFront from "../../src/images/IMG.jpg";
-import { fetchData } from "../../src/module/Api.js";
+import logement from "../../src/json/logement.json";
 
 const titre = "Chez vous, partout et ailleurs"
 
 const Home = () => {
-  const [data, setData] = useState(null);
+  // message de chargement
+  const [isLoading, setIsLoading] = useState(true);
+  const [annonces, setAnnonces] = useState([]);
+
+  // récupération des données avec UseEffet dans setAnnonces
   useEffect(() => {
-    fetchData().then((data) => {
-      setData(data);
-    });
+    setAnnonces(logement);
+    // c'est chargé, loading en false 
+    setIsLoading(false);
   }, []);
   return (
     <>
-    <Banner  texte={titre} img={imgFront} />
+      <Banner texte={titre} img={imgFront} />
       <section>
         <div className="box">
-      {data ? (
-        data.map((annonce) => (
-          <Card
-                key={annonce.id}
-                cover={annonce.cover}
-                title={annonce.title}
-                id={annonce.id} />
-        ))
-      ) : (
-        <p>Chargement en cours ...</p>
-      )}
-    </div>
-    </section>
+          {isLoading ? ( <p>Chargement en cours ...</p>) : ( annonces.map((annonce) => (
+              <Card key={annonce.id} cover={annonce.cover} title={annonce.title} id={annonce.id} />
+            ))
+          )}
+        </div>
+      </section>
     </>
   );
-}
+};
 export default Home;

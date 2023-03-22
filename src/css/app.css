@@ -9,6 +9,9 @@
 @import "./banner.css";
 @import "./collapse.css";
 @import "./slideshow.css";
+@import "./rating.css";
+
+
 html{
     font-family: "Shantell+Sans", sans-serif;
 }
