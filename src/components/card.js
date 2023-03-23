@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 
-function Card({title, cover, id, annonce}) {
 
+function Card({title, cover, id}) {
+
+// création du style de l'image
   const divStyle = {
     backgroundImage:
       "linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1)), url(" + cover +")",

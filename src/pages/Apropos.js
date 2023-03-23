@@ -2,6 +2,8 @@ import imgBack from "../../src/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg";
 import Banner from "../components/banner";
 import Collapse from "../components/collapse";
 
+
+// création des titres et des paragraphes pour les intégrer dans chaque collapse.
 const titrepara0 = "Fiabilité";
 const para0 = [
   "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.",
