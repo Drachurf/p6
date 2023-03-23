@@ -37,7 +37,6 @@ details[open].parapropos {
   margin-top: 1%;
   width: 80%;
 }
-
 @media screen and (max-width: 767px){
   .parapropos {
     width: 100%;
