@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
-
-function Card({title, cover, id}) {
-
-// création du style de l'image
+function Card({ title, cover, id }) {
+  // création du style de l'image
   const divStyle = {
     backgroundImage:
-      "linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1)), url(" + cover +")",
+      "linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1)), url(" +
+      cover +
+      ")",
     backgroundSize: "cover",
     color: "#ffffff",
     display: "flex",
@@ -14,7 +14,6 @@ function Card({title, cover, id}) {
     borderRadius: "25px",
     height: "340px",
   };
-
   return (
     <>
       <div className="conteneur">

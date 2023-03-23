@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import Card from "../../src/components/card.js";
 import Banner from "../../src/components/banner.js";
 import imgFront from "../../src/images/IMG.jpg";
-import logement from "../../src/json/logement.json";
+import logement from "../json/logement.json";
 
 const titre = "Chez vous, partout et ailleurs"
 
 const Home = () => {
+
   // message de chargement
   const [isLoading, setIsLoading] = useState(true);
   const [annonces, setAnnonces] = useState([]);

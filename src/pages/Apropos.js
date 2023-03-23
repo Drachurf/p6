@@ -1,6 +1,6 @@
 import imgBack from "../../src/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg";
-import Banner from "../components/banner";
-import Collapse from "../components/collapse";
+import Banner from "../../src/components/banner.js";
+import Collapse from "../../src/components/collapse.js";
 
 
 // création des titres et des paragraphes pour les intégrer dans chaque collapse.

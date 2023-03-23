@@ -1,10 +1,10 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Footer from "../src/components/footer.js";
 import Header from "../src/components/header.js";
 import Page404 from "../src/pages/page404.js";
 import Home from "../src/pages/home.js";
 import Apropos from "../src/pages/Apropos.js";
-import Fiche from "../src/pages/Fiche";
+import Fiche from "../src/pages/Fiche.js";
 
 import "../src/css/app.css";
 

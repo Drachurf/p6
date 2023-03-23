@@ -1,8 +1,9 @@
-import Collapse from "../components/collapse";
-import SlideShow from "../../src/components/slideshow";
+import Collapse from "../../src/components/collapse.js";
+import SlideShow from "../../src/components/slideshow.js";
 import { useParams } from "react-router-dom";
 import logement from "../../src/json/logement.json";
-import Rating from "../components/rating";
+import Rating from "../../src/components/rating.js";
+import { useNavigate } from "react-router-dom";
 
 function Fiche() {
 
@@ -11,6 +12,17 @@ function Fiche() {
   // Utiliser element pour afficher les données associées à l'id
   const element = logement.find((item) => item.id === id);
   const images = element.pictures.map((picture) => picture);
+   // utilisation de useNavigate pour la redirection
+ const navigate = useNavigate();
+  
+  // Vérifier si l'id est valide ou non
+  const idValid = logement.some((item) => item.id === id);
+
+ // vérifier si l'élément est présent, sinon rediriger vers la page 404
+ if (!idValid) {
+   navigate('/page404');
+   return null;
+ }
   return (
     <>
     {/* insertion des composants nécessaires et récupération des éléments (element) */}
