@@ -25,15 +25,14 @@ h3 {
 .hote > p {
   color: #ff6060;
 }
-.tags{
-  display: flex;
-  gap : 10%;
-  width: 10%;
-  margin: 10% 0%;
-}
-.hoteeval{
+.annonce{
   display: flex;
   flex-direction: column;
+  width: 75%;
+}
+.tags {
+  display: flex;
+  gap: 2%;
 }
 .tag {
   white-space: nowrap;
@@ -41,12 +40,18 @@ h3 {
   color: white;
   border-radius: 10px;
   height: 25px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+  width: 115px;
+  font-size: 14px;
+  display: flex;    
   align-items: center;
-  padding: 1% 15%;
+  justify-content: center;
+  padding: 0% 3%;
 }
+.hoteeval{
+  display: flex;
+  flex-direction: column;
+}
+
 .hote {
   display: flex;
   justify-content: flex-end;
@@ -84,7 +89,11 @@ font-size: 18px;
  }
  .tags{
   margin: 2% 0%;
- }  
+  width: 100%;
+ }
+ .tag{
+  font-size: 10px;
+ }
  .profil{
   height: 32px;
   width: 32px;

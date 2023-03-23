@@ -14,9 +14,9 @@ function Fiche() {
   // utilisation de useNavigate pour la redirection
   const navigate = useNavigate();
 
-  // Vérifier si l'id est valide ou non
+  // Vérifier si l'id est valide
   const idValid = logement.some((item) => item.id === id);
-  console.log(idValid);
+
   // vérifier si l'élément est présent, sinon rediriger vers la page 404
   if (!idValid) {
     navigate("/page404");
@@ -30,15 +30,15 @@ function Fiche() {
       {/* insertion des composants nécessaires et récupération des éléments (element) */}
       <SlideShow slides={images} />
       <div className="information">
-        <div>
+        <div className="annonce" >
           <h2>{element.title}</h2>
           <h3>{element.location}</h3>
           <div className="tags">
             {/* création du tableu tag pour récupérer les différents tag, avec une clef unique tag*/}
             {element.tags.map((tag) => (
-              <div className="tag" key={tag}>
+              <p className="tag" key={tag}>
                 {tag}
-              </div>
+              </p>
             ))}
           </div>
         </div>
