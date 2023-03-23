@@ -1,5 +1,5 @@
 import {NavLink} from 'react-router-dom';
-import imgKasa from '../../src/images/Vector.png';
+import imgKasa from '../../../src/images/Vector.png';
 
 export default function Header(){
     return (

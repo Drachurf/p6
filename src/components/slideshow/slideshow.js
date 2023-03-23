@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import previous from "../../src/images/Vector-7.png"
-import next from "../../src/images/Vector-2.png"
+import previous from "../../../src/images/Vector-7.png"
+import next from "../../../src/images/Vector-2.png"
 
 const SlideShow = ({ slides }) => {
 

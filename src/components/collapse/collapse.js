@@ -1,4 +1,4 @@
-import vector from '../../src/images/Vector-3.png'
+import vector from '../../../src/images/Vector-3.png'
 
 
 function Collapse(collapse){

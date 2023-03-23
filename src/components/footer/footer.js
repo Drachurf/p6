@@ -1,4 +1,4 @@
-import imgfooter from '../../src/images/Vectorwhite.png';
+import imgfooter from '../../../src/images/Vectorwhite.png';
 function Footer(){
     return(
         <div>

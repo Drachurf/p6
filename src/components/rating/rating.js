@@ -1,5 +1,5 @@
-import fullStar from "../../src/images/Vector-5.png";
-import emptyStar from "../../src/images/Vector-6.png"
+import fullStar from "../../../src/images/Vector-5.png";
+import emptyStar from "../../../src/images/Vector-6.png"
 
 
 const Rating = ({hostRate}) => {

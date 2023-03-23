@@ -1,7 +1,6 @@
-import imgBack from "../../src/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg";
-import Banner from "../../src/components/banner.js";
-import Collapse from "../../src/components/collapse.js";
-
+import imgBack from "../../../src/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg";
+import Banner from "../../components/banner/banner";
+import Collapse from "../../components/collapse/collapse.js";
 
 // création des titres et des paragraphes pour les intégrer dans chaque collapse.
 const titrepara0 = "Fiabilité";
