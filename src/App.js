@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/footer.js";
 import Header from "./components/header/header.js";
-import Page404 from "./pages/page404/page404.js";
-import Home from "./pages/home/home.js";
+import Page404 from "../src/pages/page404/page404.js";
+import Home from "../src/pages/home/home.js";
 import Apropos from "./pages/apropos/Apropos.js";
 import Fiche from "./pages/fiche/Fiche.js";
 import { useParams } from "react-router-dom";
@@ -16,7 +16,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
-        <Route path="/fiche/:id" element={<ValidateUser />}/>
+        <Route
+          path="/fiche/:id"
+          element={<ValidateUser />}
+          errorElement={<Page404 />}
+        />
         <Route path="/*" element={<Page404 />} />
         <Route path="/fiche/*" element={<Page404 />} />
       </Routes>
