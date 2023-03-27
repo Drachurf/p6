@@ -60,11 +60,10 @@ function Fiche() {
       </div>
       <div className="description">
         <Collapse titre="Description" para={element.description} />
-        {/* Création d'un table pour récupérer la liste des équipements*/}
         <Collapse
           titre="Equipements"
           para={
-            <ul>
+            <ul>{/* Création d'un tableau pour récupérer la liste des équipements*/}
               {element.equipments.map((equipment) => (
                 <li key={equipment}>{equipment}</li>
               ))}
