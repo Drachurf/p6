@@ -1,9 +1,8 @@
 import Collapse from "../../components/collapse/collapse";
 import SlideShow from "../../components/slideshow/slideshow.js";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import logement from "../../json/logement.json";
 import Rating from "../../components/rating/rating.js";
-import { useNavigate } from "react-router-dom";
 
 function Fiche() {
   //hook pour récupérer l'id du logement

@@ -6,6 +6,7 @@ import Home from "../src/pages/home/home.js";
 import Apropos from "./pages/apropos/Apropos.js";
 import Fiche from "./pages/fiche/Fiche.js";
 import { useParams } from "react-router-dom";
+import logement from "../src/json/logement.json";
 
 import "../src/css/app.css";
 
@@ -27,12 +28,10 @@ function App() {
 
 function ValidateUser() {
   let params = useParams();
-  // Utilisez params.id directement pour extraire l'ID de l'utilisateur
-  let userId = params.id.match(/\d+/);
-  if (!userId) {
+  const element = logement.find((item) => item.id === params.id);
+  if (!element) {
     return <Page404 />;
   }
-  // Utilisez params.id directement pour passer l'ID de l'utilisateur à Fiche
   return <Fiche id={params.id} />;
 }
 
