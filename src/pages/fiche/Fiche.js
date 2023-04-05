@@ -9,10 +9,8 @@ function Fiche() {
   const { id } = useParams();
   // Utiliser element pour afficher les données associées à l'id
   const element = logement.find((item) => item.id === id);
-
   // utilisation de useNavigate pour la redirection
   const navigate = useNavigate();
-
   // Vérifier si l'id est valide
   const idValid = logement.some((item) => item.id === id);
 
@@ -59,9 +57,7 @@ function Fiche() {
       </div>
       <div className="description">
         <Collapse titre="Description" para={element.description} />
-        <Collapse
-          titre="Equipements"
-          para={
+        <Collapse titre="Equipements" para={
             <ul>{/* Création d'un tableau pour récupérer la liste des équipements*/}
               {element.equipments.map((equipment) => (
                 <li key={equipment}>{equipment}</li>

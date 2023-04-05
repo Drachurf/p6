@@ -7,7 +7,7 @@ import logement from "../../json/logement.json";
 const titre = "Chez vous, partout et ailleurs";
 
 const Home = () => {
-  // message de chargement
+  
   const [isLoading, setIsLoading] = useState(true);
   const [annonces, setAnnonces] = useState([]);
 
