@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 /*Pages*/
 @import "../pages/home/home.css";
@@ -18,5 +18,5 @@
 
 
 html{
-    font-family: "Shantell+Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
