@@ -15,6 +15,39 @@ footer {
 footer p {
   color: white;
   font-size: 24px;
+  margin-bottom: 0;
+}
+.social{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+li{
+  font-size: 24px;
+}
+.linkSocia{
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: flex-end;
+}
+.marginLogo{
+  margin-left: 5%;
+}
+a{
+  margin: 0px;
+}
+.droitContact{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+.lienContact{
+color: white;
+}
+:hover.lienContact{
+  color: #FF6060;
 }
 @media screen and (max-width: 767px) {
   footer p {

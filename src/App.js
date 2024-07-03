@@ -4,6 +4,7 @@ import Header from "./components/header/header.js";
 import Page404 from "../src/pages/page404/page404.js";
 import Home from "../src/pages/home/home.js";
 import Apropos from "./pages/apropos/Apropos.js";
+import Contact from "./pages/contact/Contact.js";
 import Fiche from "./pages/fiche/Fiche.js";
 import { useParams } from "react-router-dom";
 import logement from "../src/json/logement.json";
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/fiche/:id" element={<ValidateUser />}errorElement={<Page404 />}/>
         <Route path="/*" element={<Page404 />} />
         <Route path="/fiche/*" element={<Page404 />} />

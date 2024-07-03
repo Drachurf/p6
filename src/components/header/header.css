@@ -1,8 +1,10 @@
 .menu{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+}
+.titre{
     font-size : 3em;
-    height: 68px;
     color: #FF6060;
 }
 a{
@@ -12,9 +14,12 @@ a{
 .nav{
     display: flex;
     justify-content: space-around;
-    width: 20%;
-    font-size: 20px;
+}
+.boxNav{
+    width: 70%;
     text-decoration: none;
+    font-size: 20px;
+
 }
 .logokasa{
     Height : 60%;
@@ -25,13 +30,15 @@ li{
 .activeLink{
     text-decoration: underline;
 }
-@media screen and (max-width: 992px){
-    .nav{
-        width: 30%;
-    }
-}
 @media screen and (max-width: 767px){
-    .nav{
-        width: 50%;
+    .titre{
+        font-size : 2em;
+        color: #FF6060;
+    }
+    .logokasa{
+        Height : 30%;
+    }
+    li{
+     font-size: 15px;
     }
 }
